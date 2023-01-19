@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+form,
+div,
+h2,
+hr {
+  justify-content: center;
+  align-self: center;
+}
+
+.bookCollectionContainer {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 1px solid black;
+  justify-content: space-between;
+  width: 500px;
+  flex-wrap: wrap;
+}
+
+/* created a new this container for each book entry */
+.book-entry {
+  width: 100%;
+  padding-block: 2px;
+  padding-inline: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* book entry background 1 */
+.entry-bg-1 {
+  background-color: white;
+}
+
+/* book entry background 2 */
+.entry-bg-2 {
+  background-color: lightgrey;
+}
+
+/* added this class to the remove buttons */
+.remove-btn {
+  box-shadow: 2px 3px 1px #000;
+}
+
+hr {
+  margin-block-start: 50px;
+  margin-block-end: 20px;
+  border-bottom: 2px solid #000;
+  width: 100px;
+  box-shadow: 0 2px 1px #000;
+}
+
+form {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+input {
+  border: 2px solid #000;
+  padding-inline-start: 2px;
+  padding-block-start: 2px;
+}
+
+#submit-btn {
+  width: 50px;
+  box-shadow: 2px 3px 1px #000;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding-block: 5px;
+  margin-bottom: 5px;
+}
+
+.time {
+  text-align: right;
+  margin-block-end: 50px;
+}
+
+.books-list,
+.new-book-form,
+.contact-us {
+  padding-right: 10px;
+  border-right: 1px solid black;
+}
+
+.contact-info-container {
+  display: none;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: 50px;
+  border: 2px solid black;
+}
+
+.book-collection-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
